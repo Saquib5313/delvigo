@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Delvigo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS (UPDATED) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+<!-- AOS Animation -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet"/>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:wght@100..900&display=swap" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+
+<!-- 🔹 Top Header -->
+<div class="top-header py-2">
+  <div class="container d-flex justify-content-end align-items-center">
+
+    <!-- Right: Phone + WhatsApp -->
+    <div class="d-flex align-items-center">
+      <!-- <span class="phone-text">+91 88842 88079</span> -->
+      <a href="https://wa.me/918884288079" target="_blank" class="btn whatsapp-btn btn-sm rounded-pill px-3">
+        WhatsApp
+      </a>
+    </div>
+
+  </div>
+</div>
+
+<!-- 🔹 Navbar -->
+<div class="main-navbar">
+  <nav class="navbar navbar-expand-lg bg-light rounded-pill px-4 px-lg-4 py-2 shadow-sm navbar-inner">
+ <!-- Left: Logo -->
+    <div  class="d-flex align-items-center">
+      <div class="logo-icon"></div>
+      <span  class="fw-bold fs-5">Delvigo</span>
+    </div>
+    <!-- Toggle -->
+    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Links -->
+    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+
+      <ul class="navbar-nav mb-2 mb-lg-0">
+
+        <li class="nav-item">
+          <a class="nav-link fw-semibold" href="/index.html">Home</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link fw-semibold" href="/about.html">About</a>
+        </li>
+
+        <!-- Services -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle fw-semibold" href="/services.html" data-bs-toggle="dropdown">
+            Services
+          </a>
+                    <ul class="dropdown-menu shadow border-0 rounded-3">
+            <li><a class="dropdown-item" href="/services.html#FTL">FTL</a></li>
+            <li><a class="dropdown-item" href="/services.html#PTL">PTL</a></li>
+            <li><a class="dropdown-item" href="/services.html#LM">Last-Mile</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link fw-semibold" href="/industries.html">Industries</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link fw-semibold" href="/index.html#FAQ">FAQ</a>
+        </li>
+
+         <li class="nav-item d-md-none d-block">
+           <a href="/contact.html" class="call-btn blue-btn">
+            Contact Us
+          </a>
+        </li>
+
+      </ul>
+
+    </div>
+    <div class=" d-none d-md-block d-flex align-items-center">
+      <a href="/contact.html" class="call-btn blue-btn">
+            Contact Us
+          </a>
+    </div>
+  </nav>
+</div>
+
+<!-- Hero -->
+<section class="hero section text-center" data-aos="fade-up">
+  <div class="container">
+    <h1 class="text-white fw-bold">Built for Businesses That Cannot Afford to Get Logistics Wrong</h1>
+    <p class="mt-3 text-white">
+      Delvigo works primarily with B2B clients - manufacturers, distributors, SMEs, and e-commerce businesses that need freight partners they can rely on without micromanaging.
+    </p>
+  </div>
+</section>
+
+<!-- Industries We Serve -->
+<section class="section">
+  <div class="container">
+
+    <h2 class="text-center mb-5 section-title" data-aos="fade-up">Industries We Serve</h2>
+
+    <div class="row g-4">
+
+      <!-- Manufacturing -->
+      <div class="col-md-3" data-aos="fade-up" data-aos-delay="100">
+        <div class="why-card p-4 h-100">
+          <p class="fw-bold">Manufacturing</p>
+          <p class="fs-8">Factory output needs to move. We make sure it does.</p>
+          <ul class="list-unstyled ps-3">
+        <li class="list mb-2 ps-3 fs-8" data-aos="fade-right" data-aos-delay="400">Raw material inbound from suppliers</li>
+        <li class="list mb-2 ps-3 fs-8" data-aos="fade-right" data-aos-delay="500">Finished goods outbound to distributors and retailers</li>
+        <li class="list mb-2 ps-3 fs-8" data-aos="fade-right" data-aos-delay="600">Inter-plant transfers and factory-to-warehouse movement</li>
+        <li class="list mb-2 ps-3 fs-8" data-aos="fade-right" data-aos-delay="700">Bulk and heavy goods requiring proper vehicle allocation</li>
+        <li class="list mb-2 ps-3 fs-8" data-aos="fade-right" data-aos-delay="800">Time-bound dispatches tied to production schedules</li>
+      </ul>
+          
+        </div>
+      </div>
+
+      <!-- SMEs -->
+      <div class="col-md-3" data-aos="fade-up" data-aos-delay="200">
+        <div class="why-card p-4 h-100">
+          <p class="fw-bold">Small and Mid-Size Businesses (SMEs)</p>
+          <p class="fs-8">You do not need enterprise scale. You need a partner who actually shows up.</p>
+          <ul class="list-unstyled ps-3">
+        <li class="list mb-2 ps-3 fs-8" data-aos="fade-right" data-aos-delay="400">Regular B2B freight without high minimums or complex contracts</li>
+        <li class="list mb-2 ps-3 fs-8" data-aos="fade-right" data-aos-delay="500">Flexible PTL options that match your order frequency</li>
+        <li class="list mb-2 ps-3 fs-8" data-aos="fade-right" data-aos-delay="600">Single point of contact - no call center bouncing</li>
+        <li class="list mb-2 ps-3 fs-8" data-aos="fade-right" data-aos-delay="700">Clear pricing with no surprise invoices</li>
+        <li class="list mb-2 ps-3 fs-8" data-aos="fade-right" data-aos-delay="800">Founders who pick up when you call</li>
+      </ul>
+          </div>
+      </div>
+
+      <!-- E-commerce -->
+      <div class="col-md-3" data-aos="fade-up" data-aos-delay="300">
+        <div class="why-card p-4 h-100">
+          <p class="fw-bold">E-commerce and D2C Brands</p>
+          <p class="fs-8">Your customer's experience starts before they open the box. It starts with delivery.</p>
+          <ul class="list-unstyled ps-3">
+        <li class="list mb-2 ps-3 fs-8" data-aos="fade-right" data-aos-delay="400">Last-mile delivery across Bangalore</li>
+        <li class="list mb-2 ps-3 fs-8" data-aos="fade-right" data-aos-delay="500">B2B inventory replenishment via FTL and PTL</li>
+        <li class="list mb-2 ps-3 fs-8" data-aos="fade-right" data-aos-delay="600">Returns handling built into the process</li>
+        <li class="list mb-2 ps-3 fs-8" data-aos="fade-right" data-aos-delay="700">High-volume daily dispatch capability</li>
+        <li class="list mb-2 ps-3 fs-8" data-aos="fade-right" data-aos-delay="800">Delivery confirmation and real-time updates</li>
+      </ul>
+        </div>
+      </div>
+
+      <!-- Distributors -->
+      <div class="col-md-3" data-aos="fade-up" data-aos-delay="400">
+        <div class="why-card p-4 h-100">
+          <p class="fw-bold">Distributors and Traders</p>
+          <p class="fs-8">Keeping supply chains moving across the network.</p>
+          <ul class="list-unstyled ps-3">
+        <li class="list mb-2 ps-3 fs-8" data-aos="fade-right" data-aos-delay="400">Regional stock distribution to multiple retail points</li>
+        <li class="list mb-2 ps-3 fs-8" data-aos="fade-right" data-aos-delay="500">Scheduled PTL runs on fixed routes</li>
+        <li class="list mb-2 ps-3 fs-8" data-aos="fade-right" data-aos-delay="600">Reliable lead times your retail network can count on</li>
+        <li class="list mb-2 ps-3 fs-8" data-aos="fade-right" data-aos-delay="700">Documentation and compliance handled properly</li>
+        </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- WHY DELVIGO -->
+<section class="hero-premium">
+  <div class="container">
+    <div class="hero-grid">
+
+      <!-- Left Content -->
+      <div class="hero-left">
+        <h1>
+          We Did Not Start This Company to Be Another Option.
+          <span>We Started It to Be a Better One.</span>
+        </h1>
+
+        <p>
+          The logistics industry in India is full of providers.
+          What it is short on is <strong>trust</strong>.
+          Delvigo exists to close that gap.
+        </p>
+      </div>
+
+      <!-- Right Content -->
+      <div class="hero-right">
+        <div class="promise-card">
+          <h3>Our Core Promise</h3>
+          <p>
+            When you hand over a shipment to Delvigo, you should not have to think
+            about it again until it is delivered. That is the standard we hold ourselves to.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Glow Elements -->
+  <div class="glow glow-1"></div>
+  <div class="glow glow-2"></div>
+</section>
+
+
+
+
+
+<!-- DELVIGO DIFFERENCE -->
+<section class="section">
+  <div class="container">
+
+    <h2 class="section-title" data-aos="fade-up">What Actually Makes Us Different</h2>
+
+    <div class="row g-4">
+
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="card-custom">
+          <h5 class="value-title">Communication Without Chasing</h5>
+          <p class="text-white">You get updates at key stages - automatically.</p>
+        </div>
+      </div>
+
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="card-custom">
+          <h5 class="value-title">One Point of Contact</h5>
+          <p class="text-white">No bouncing between departments or call centers.</p>
+        </div>
+      </div>
+
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+        <div class="card-custom">
+          <h5 class="value-title">Founders in the Field</h5>
+          <p class="text-white">Hands-on leadership involved in operations.</p>
+        </div>
+      </div>
+
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="400">
+        <div class="card-custom">
+          <h5 class="value-title">Accountability</h5>
+          <p class="text-white">We fix issues transparently when things go wrong.</p>
+        </div>
+      </div>
+
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="500">
+        <div class="card-custom">
+          <h5 class="value-title">Industry Experience</h5>
+          <p class="text-white">Built from real logistics ground experience.</p>
+        </div>
+      </div>
+
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="600">
+        <div class="card-custom">
+          <h5 class="value-title">No Vague Pricing</h5>
+          <p class="text-white">Clear quotes. No surprises.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- How we work -->
+<section class="workflow">
+  <div class="container">
+
+    <h2 class="section-title">How We Work</h2>
+
+    <div class="workflow-grid">
+
+      <div class="step-card">
+        <span class="step-number">01</span>
+        <h4 class="fw-bold">Enquiry</h4>
+        <p>Reach out via call, WhatsApp, or form. Tell us what you need moved.</p>
+      </div>
+
+      <div class="step-card">
+        <span class="step-number">02</span>
+        <h4 class="fw-bold">Assessment</h4>
+        <p>We understand your cargo, route, frequency, and any specific handling needs.</p>
+      </div>
+
+      <div class="step-card">
+        <span class="step-number">03</span>
+        <h4 class="fw-bold">Clear Quote</h4>
+        <p>A simple, itemized quote. You know exactly what you are paying and why.</p>
+      </div>
+
+      <div class="step-card">
+        <span class="step-number">04</span>
+        <h4 class="fw-bold">Execution</h4>
+        <p>Pickup happens as scheduled. Transit happens on planned routes.</p>
+      </div>
+
+      <div class="step-card">
+        <span class="step-number">05</span>
+        <h4 class="fw-bold">Live Updates</h4>
+        <p>You hear from us at key points. No news is not good news in logistics.</p>
+      </div>
+
+      <div class="step-card">
+        <span class="step-number">06</span>
+        <h4 class="fw-bold">Delivery & Documentation</h4>
+        <p>Goods delivered, POD shared, invoice issued. Clean, documented, done.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- What We Are Building Toward -->
+<section class="vision-section">
+  <div class="container">
+
+    <div class="vision-content">
+
+      <h2 class="vision-title">
+        What We Are <span>Building Toward</span>
+      </h2>
+
+      <p class="vision-text">
+        Delvigo is starting in Bangalore, with a vision to become a nationally recognized logistics brand that resets expectations for the industry.
+      </p>
+
+      <p class="vision-text">
+        We plan to expand into warehousing and integrated logistics solutions as we grow. The foundation being built now - systems, accountability, client relationships - will drive that expansion.
+      </p>
+
+      <h4 class="vision-highlight">
+        If you are looking for a logistics partner who treats your freight with the same seriousness you do, Delvigo is worth a conversation.
+      </h4>
+
+    </div>
+
+  </div>
+</section>
+
+
+<!-- Footer -->
+ <section class="final-cta py-5 text-white">
+  <div class="row container">
+    <div class="col-lg-3">
+      <h4 class="p0 m-0 fw-bold text-white mb-2">Delvigo</h4>
+      <p class="p-0 m-0 fs-8 text-white mb-2">Delvigo handles Full Truckload, Part Truckload, and Last-Mile Delivery for manufacturers, SMEs, and e-commerce brands in Bangalore.</p>
+      <div class="d-flex align-items-center gap-2">
+        <div class="icon-footer">
+          <i class="bi bi-instagram"></i>
+        </div>
+        <div class="icon-footer">
+          <i class="bi bi-facebook"></i>
+        </div>
+        <div class="icon-footer">
+          <i class="bi bi-twitter"></i>
+        </div>
+      </div>
+    </div>
+    
+<!-- Services -->
+    <div class="col-lg-2 text-white">
+
+  <h6 class="fw-bold mb-3 text-uppercase">Services</h6>
+
+  <ul class="list-unstyled">
+
+    <li class="mb-2">
+      <a href="/services.html#FTL" class="footer-link">
+        <i class="bi bi-truck me-2"></i> Full Truckload (FTL)
+      </a>
+    </li>
+
+    <li class="mb-2">
+      <a href="/services.html#PTL" class="footer-link">
+        <i class="bi bi-box-seam me-2"></i> Part Truckload (PTL)
+      </a>
+    </li>
+
+    <li class="mb-2">
+      <a href="/services.html#LM" class="footer-link">
+        <i class="bi bi-geo-alt me-2"></i> Last-Mile Delivery
+      </a>
+    </li>
+
+    <!-- <li class="mb-2">
+      <a href="#" class="footer-link">
+        <i class="bi bi-clock-history me-2"></i> Express Delivery
+      </a>
+    </li> -->
+
+    <!-- <li>
+      <a href="#" class="footer-link">
+        <i class="bi bi-building me-2"></i> Contract Logistics
+      </a>
+    </li> -->
+
+  </ul>
+
+</div>
+<!-- Company -->
+    <div class="col-lg-2 ps-5">
+      <h6 class="p0 m-0 fw-bold text-white mb-2 text-uppercase">Company</h6>
+
+      <ul class="list-unstyled">
+
+    <li class="mb-2">
+      <a href="/index.html" class="footer-link">
+      Home
+      </a>
+    </li>
+
+    <li class="mb-2">
+      <a href="/about.html" class="footer-link">
+        About
+      </a>
+    </li>
+
+    <li class="mb-2">
+      <a href="/services.html" class="footer-link">
+        Services
+      </a>
+    </li>
+
+    <li class="mb-2">
+      <a href="/industries.html" class="footer-link">
+        Industries
+      </a>
+    </li>
+
+    <li>
+      <a href="/contact.html" class="footer-link">
+        Contact Us
+      </a>
+    </li>
+
+  </ul>
+    </div>
+
+    <!-- Get in touch -->
+    <div class="col-lg-5 text-white">
+
+  <h6 class="fw-bold mb-3 text-uppercase">Get in Touch</h6>
+
+  <div class="d-flex align-items-top gap-5">
+  <div>
+    <!-- Address -->
+  <div class="d-flex align-items-start gap-3 mb-3">
+    <i class="bi bi-geo-alt fs-5 mt-1"></i>
+    <div>
+      <p class="fw-semibold mb-1">Office Address</p>
+      <p class="mb-0 small text-light">
+        Mini Cottage, 201/a, 4th Cross Road<br>
+        Shivalingaiah Colony, Jeevan Bima Nagar<br>
+        Bengaluru, Karnataka - 560075
+      </p>
+    </div>
+  </div>
+  </div>
+
+  <div>
+    <!-- Business Hours -->
+  <div class="d-flex align-items-start gap-3 mb-3">
+    <i class="bi bi-clock fs-5 mt-1"></i>
+    <div>
+      <p class="fw-semibold mb-1">Business Hours</p>
+      <p class="mb-0 small text-light">
+        Monday to Saturday: 9:00 AM - 7:00 PM<br>
+        Emergency freight enquiries: Available on WhatsApp
+      </p>
+    </div>
+  </div>
+
+  </div>
+</div>
+  <!-- Contact -->
+  <div class="d-flex align-items-start gap-3 mb-2">
+    <i class="bi bi-telephone fs-5 mt-1"></i>
+    <div>
+      <p class="fw-semibold mb-2">Contact</p>
+
+      <div class="d-flex align-items-center gap-5">
+        <div>
+          <!-- Founder -->
+      <p class="mb-1 small text-light fw-semibold">Nithin Jadhav - Founder</p>
+      <p class="mb-1 small text-light">Phone / WhatsApp: +91 88842 88079</p>
+      <p class="mb-2 small text-light">Email: nithin@delvigo.co.in</p>
+        </div>
+
+        <div>
+          <!-- Co-Founder -->
+      <p class="mb-1 small text-light fw-semibold">Hari Rao R - Co-Founder</p>
+      <p class="mb-1 small text-light">
+        Phone: +91 9845046361<br>
+        Alternate: +91 8296806361
+      </p>
+      <p class="mb-0 small text-light">Email: hari@arrkay.com</p>
+
+        </div>
+      </div>
+      
+      
+    </div>
+  </div>
+
+</div>
+  </div>
+
+  <!-- Bottom Bar -->
+    <div class="footer-bottom text-center mt-5 pt-4">
+      <p class="small mb-0">
+        © 2026 Delvigo Logistics. All rights reserved.
+      </p>
+    </div>
+ </section>
+
+
+<!-- Bootstrap JS (MATCH VERSION) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+<!-- AOS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+
+<script>
+AOS.init({
+  duration:1000,
+  once:true
+});
+
+  gsap.from(".timeline-item", {
+    opacity: 0,
+    y: 80,
+    duration: 1,
+    stagger: 0.2,
+    ease: "power3.out"
+  });
+  
+</script>
+
+
+</body>
+</html>
