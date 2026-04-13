@@ -22,44 +22,70 @@
         width: fit-content;
     }
 body {
-      padding-top: 90px; /* space for fixed navbar */
+      /* padding-top: 90px; space for fixed navbar */
       background: #f5f7fa;
       /* font-family: "Roboto", sans-serif; */
-       font-family: "Ubuntu", sans-serif;
+        font-family: "Red Hat Display", sans-serif;
     }
 
-   .top-header {
-      position: fixed;
-      top: 0;
-      width: 100%;
-      z-index: 1000;
-      background: #ffffff;
-      border-bottom: 1px solid #eee;
-    }
-
-    .main-navbar {
-      position: fixed;
-      top: 70px;
-      width: 100%;
-      z-index: 999;
-    }
-
-    .navbar-nav {
-  gap: 18px; /* adjust (16–24px looks best) */
+   /* Top header */
+.top-header {
+  background: linear-gradient(135deg, #0a0f1c, #111827);
 }
 
-    .navbar-inner {
-      max-width: 1200px;
-      margin: auto;
-    }
 
-    /* desktop = pill (default), mobile = square */
+/* Sticky navbar */
+.main-navbar {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+/* Navbar style */
+.navbar-inner {
+  /* border-radius: 50px; */
+  transition: 0.3s;
+}
+
+/* Mobile fix */
 @media (max-width: 768px) {
   .navbar-inner {
     border-radius: 0 !important;
   }
 }
 
+
+/* Default (desktop stays same) */
+.order-mobile-btns {
+  order: 0;
+}
+
+/* Mobile layout */
+@media (max-width: 768px) {
+
+  .hero-section .row {
+    text-align: center;
+  }
+
+  /* reorder inside content */
+  .order-mobile-btns {
+    order: 1;
+  }
+
+  .hero-section h1 {
+    order: 2;
+  }
+
+  .hero-section p {
+    order: 3;
+  }
+
+  .col-lg-7 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 
     .logo-icon {
       width: 35px;
@@ -103,6 +129,14 @@ body {
     /* border: 1px solid #25D366; */
   background-color: var(--whatsApp);
   color: #fff;
+}
+
+.fs-5{
+  font-size: 1.3rem;
+}
+
+.fs-6{
+  font-size: 1.1rem;
 }
 
 .fs-7{
@@ -192,10 +226,7 @@ body {
   width: 100%;
 }
 
-.industries {
-  /* background: linear-gradient(135deg, #0f172a, #1a1a2e); */
-  color: #fff;
-}
+
 
 /* CARD */
 .industry-card {
@@ -746,7 +777,7 @@ body {
 }
 
 .contact-section {
-  padding: 100px 0;
+  padding: 50px 0;
   background: var(--primary-dark);
   color: #fff;
 }

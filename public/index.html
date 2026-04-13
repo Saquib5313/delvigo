@@ -2,24 +2,27 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Delvigo</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- <title>Delvigo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+<title>Delvigo - Trusted B2B Logistics in Bangalore | FTL, PTL, Last-Mile</title>
+<meta name="description" content="Reliable FTL, PTL, and last-mile delivery for manufacturers, SMEs, and e-commerce brands in Bangalore. Call or WhatsApp for a free quote today.">
+
+  
+<!-- AOS   -->
+<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+
+
 
   <!-- Bootstrap CSS (UPDATED) -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <!-- Bootstrap Icons -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
 
-  <!-- Fonts -->
-  <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:wght@100..900&display=swap" rel="stylesheet"> -->
-
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Reddit+Sans:ital,wght@0,200..900;1,200..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Satisfy&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-
+<link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
 
   <!-- Custom CSS -->
   <link rel="stylesheet" href="style/style.css">
@@ -28,26 +31,31 @@
 <body>
     
 
-<!-- 🔹 Top Header -->
+<!-- Top Header (scrolls away) -->
 <div class="top-header py-2">
-  <div class="container d-flex justify-content-end align-items-center">
-    <div class="d-flex align-items-center">
-      <a href="https://wa.me/918884288079" target="_blank" class="btn whatsapp-btn btn-sm px-3">
-        <i class="bi bi-whatsapp fs-7"></i>
-      </a>
-    </div>
-
+  <div class="container d-flex justify-content-end gap-3 align-items-center">
+    <!-- <div>
+      <a href="https://wa.me/918884288079?text=Hi%2C%20I%20have%20a%20freight%20enquiry%20for%20Delvigo." target="_blank" class="btn whatsapp-btn btn-sm px-3">
+      <i class="bi bi-whatsapp"></i>
+    </a>
+    
+    </div> -->
+    <p class="p-0 m-0 text-white fs-7 "><i class="bi bi-telephone me-2"></i>+91 8884288079 <span class="ps-3 border-end"></span></p>
+    <p class="p-0 m-0 text-white fs-7"><i class="bi bi-envelope-at me-2"></i>nithin@delvigo.co.in</p>
   </div>
 </div>
 
-<!-- 🔹 Navbar -->
+<!-- Navbar (sticky) -->
 <div class="main-navbar">
-  <nav class="navbar navbar-expand-lg bg-light rounded-pill px-4 px-lg-4 py-3 shadow-sm navbar-inner">
- <!-- Left: Logo -->
-    <div  class="d-flex align-items-center">
-      <div class="logo-icon"></div>
-      <span  class="fw-bold fs-5">Delvigo</span>
+  <nav class="navbar navbar-expand-lg bg-light px-3 px-lg-4 py-3 shadow-sm navbar-inner">
+
+    <!-- Logo -->
+    <div class="d-flex align-items-center">
+      <img src="img/logo.png" style="width: 100px;" alt="">
+      <!-- <div class="logo-icon"></div>
+      <span class="fw-bold fs-5">Delvigo</span> -->
     </div>
+
     <!-- Toggle -->
     <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
       <span class="navbar-toggler-icon"></span>
@@ -55,84 +63,73 @@
 
     <!-- Links -->
     <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-
       <ul class="navbar-nav mb-2 mb-lg-0">
 
-        <li class="nav-item">
-          <a class="nav-link fw-semibold" href="/index.html">Home</a>
-        </li>
+        <li class="nav-item"><a class="nav-link fw-semibold" href="/index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link fw-semibold" href="/about.html">About</a></li>
 
-        <li class="nav-item">
-          <a class="nav-link fw-semibold" href="/about.html">About</a>
-        </li>
-
-        <!-- Services -->
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle fw-semibold" href="/services.html" data-bs-toggle="dropdown">
-            Services
-          </a>
-                    <ul class="dropdown-menu shadow border-0 rounded-3">
+          <a class="nav-link dropdown-toggle fw-semibold" href="/services.html" data-bs-toggle="dropdown">Services</a>
+          <ul class="dropdown-menu shadow border-0 rounded-3">
             <li><a class="dropdown-item" href="/services.html#FTL">FTL</a></li>
             <li><a class="dropdown-item" href="/services.html#PTL">PTL</a></li>
             <li><a class="dropdown-item" href="/services.html#LM">Last-Mile</a></li>
           </ul>
         </li>
 
-        <li class="nav-item">
-          <a class="nav-link fw-semibold" href="/industries.html">Industries</a>
-        </li>
+        <li class="nav-item"><a class="nav-link fw-semibold" href="/industries.html">Industries</a></li>
+        <li class="nav-item"><a class="nav-link fw-semibold" href="/index.html#FAQ">FAQ</a></li>
 
-        <li class="nav-item">
-          <a class="nav-link fw-semibold" href="/index.html#FAQ">FAQ</a>
-        </li>
-
-         <li class="nav-item d-md-none d-block">
-           <a href="/contact.html" class="call-btn blue-btn">
-            Contact Us
-          </a>
+        <li class="nav-item d-md-none d-block">
+          <a href="/contact.html" class="call-btn blue-btn">Contact Us</a>
         </li>
 
       </ul>
+    </div>
 
+    <div class="d-none d-md-block">
+      <a href="/contact.html" class="call-btn blue-btn">Contact Us</a>
     </div>
-    <div class=" d-none d-md-block d-flex align-items-center">
-      <a href="/contact.html" class="call-btn blue-btn">
-            Contact Us
-          </a>
-    </div>
+
   </nav>
 </div>
 
 
 <!-- Hero Section -->
-<section class="hero-section text-white d-flex align-items-center">
-  <!-- <div style="height: 50px;"></div> -->
+<section class="hero-section text-white d-flex align-items-center" data-aos="fade-in">
   <div class="container py-5">
     <div class="row align-items-center">
 
-      <div class="col-lg-7">
-        <h1 class="display-4 fw-bold mb-3">
+      <!-- Image (comes first on mobile) -->
+      <div class="col-lg-5 order-1 order-lg-2 text-center mb-4 mb-lg-0" data-aos="zoom-in" data-aos-delay="200">
+        <img src="/img/Hero.png" 
+             class="hero-img img-fluid rounded">
+      </div>
+
+      <!-- Content -->
+      <div class="col-lg-7 order-2 order-lg-1 text-center text-lg-start">
+
+        <h1 class="display-4 fw-bold mb-3" data-aos="fade-up">
           Your Shipment Leaves. It Arrives.<br>
           No Follow-ups. No Excuses.
         </h1>
 
-        <p class="lead mb-4 fs-7">
-          Delvigo handles Full Truckload, Part Truckload, and Last-Mile Delivery for manufacturers, SMEs, and e-commerce brands in Bangalore.
-        </p>
-
-        <div class="d-flex flex-wrap gap-3">
-           <a href="/contact.html" class="call-btn blue-btn">
+        <!-- Buttons (shown before text on mobile) -->
+        <div class="d-flex flex-wrap gap-3 justify-content-center justify-content-lg-start mb-3 order-mobile-btns" data-aos="fade-up" data-aos-delay="200">
+          <a href="/contact.html" class="call-btn blue-btn">
             Get a Free Quote
           </a>
-          <a href="https://wa.me/918884288079?text=Hi,%20I%20have%20a%20freight%20enquiry%20for%20Delvigo." target="_blank" class="whatsapp-btn">
+
+          <a href="https://wa.me/918884288079?text=Hi%2C%20I%20have%20a%20freight%20enquiry%20for%20Delvigo." target="_blank" class="whatsapp-btn">
             <i class="bi bi-whatsapp"></i> Chat on WhatsApp
           </a>
         </div>
-      </div>
 
-      <div class="col-lg-5">
-        <img src="/img/Hero.png" 
-        class="hero-img img-fluid rounded">
+        <p class="lead mb-4 fs-7" data-aos="fade-up" data-aos-delay="300">
+          Delvigo handles Full Truckload, Part Truckload, and Last-Mile Delivery 
+          for manufacturers, SMEs, and e-commerce brands in Bangalore.
+        </p>
+
       </div>
 
     </div>
@@ -140,28 +137,28 @@
 </section>
 
 <!-- Trust Bar -->
- <section class="trust-bar py-4 bg-light text-center">
+ <section class="trust-bar py-4 bg-light text-center" data-aos="fade-up">
   <div class="container">
     <div class="row">
 
-      <div class="col-6 col-lg-3 mb-2 border-end">
-        <h6 class="fw-bold">Bangalore</h6>
-        <p class="mb-0 text-muted">Currently Serving</p>
+      <div class="col-6 col-lg-3 mb-2 border-end" >
+        <h6 class="fw-bold" data-aos="fade-up" data-aos-delay="100">Bangalore</h6>
+        <p class="mb-0 text-muted" data-aos="fade-up" data-aos-delay="150">Currently Serving</p>
       </div>
 
-      <div class="col-6 col-lg-3 mb-2 border-end">
-        <h6 class="fw-bold">B2B</h6>
-        <p class="mb-0 text-muted">Focused Service</p>
+      <div class="col-6 col-lg-3 mb-2 border-end" >
+        <h6 class="fw-bold" data-aos="fade-up" data-aos-delay="200">B2B</h6>
+        <p class="mb-0 text-muted" data-aos="fade-up" data-aos-delay="250">Focused Service</p>
       </div>
 
-      <div class="col-6 col-lg-3 mb-2 border-end">
-        <h6 class="fw-bold">3</h6>
-        <p class="mb-0 text-muted">Core Services</p>
+      <div class="col-6 col-lg-3 mb-2 border-end" >
+        <h6 class="fw-bold" data-aos="fade-up" data-aos-delay="300">3</h6>
+        <p class="mb-0 text-muted" data-aos="fade-up" data-aos-delay="350">Core Services</p>
       </div>
 
-      <div class="col-6 col-lg-3 mb-2">
-        <h6 class="fw-bold">100%</h6>
-        <p class="mb-0 text-muted">Accountability</p>
+      <div class="col-6 col-lg-3 mb-2" >
+        <h6 class="fw-bold" data-aos="fade-up" data-aos-delay="400">100%</h6>
+        <p class="mb-0 text-muted" data-aos="fade-up" data-aos-delay="450">Accountability</p>
       </div>
 
     </div>
@@ -173,35 +170,35 @@
  <section class="services py-5">
   <div class="container">
 
-    <div class="text-center mb-5">
-      <h2 class="fw-bold">Our Services</h2>
-      <p class="text-muted">Three focused services. Zero confusion.</p>
+    <div class="text-center mb-5" data-aos="fade-up">
+      <h2 class="fw-bold" data-aos="fade-up" data-aos-delay="100">Our Services</h2>
+      <p class="text-muted" data-aos="fade-up" data-aos-delay="200">Three focused services. Zero confusion.</p>
     </div>
 
     <div class="row g-4">
 
       <!-- FTL -->
-      <div class="col-md-4">
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
         <div class="service-card h-100 border-0 shadow-sm p-3">
-            <div class="w-fit bg-pr p-2 rounded mb-1" >
+            <div class="w-fit bg-pr p-2 rounded mb-1" data-aos="fade-right" data-aos-delay="200">
                 <img src="https://cdn-icons-png.flaticon.com/512/1048/1048329.png" style="width: 40px; " alt="">
             </div>
-          <p class="p-0 m-0 fw-bold ">Full Truckload (FTL)</p>
-          <p class="fs-8 text-pr fst-italic">One truck. Yours alone. No stops, no delays.</p>
+          <p class="p-0 m-0 fw-bold " data-aos="fade-right" data-aos-delay="300">Full Truckload (FTL)</p>
+          <p class="fs-8 text-pr fst-italic" data-aos="fade-right" data-aos-delay="400">One truck. Yours alone. No stops, no delays.</p>
           <ul style="list-style: none;" class="fs-8 p-0 ">
-            <div class="d-flex gap-2 mb-1">
+            <div class="d-flex gap-2 mb-1" data-aos="fade-right" data-aos-delay="500">
                 <div class="border-start border-pr"></div><li class="fs-8">Dedicated truck capacity for your shipment</li>
             </div>
-            <div class="d-flex gap-2 mb-1">
+            <div class="d-flex gap-2 mb-1" data-aos="fade-right" data-aos-delay="600">
                 <div class="border-start border-pr"></div><li class="fs-8">Faster transit - no sharing, no detours</li>
             </div>
-            <div class="d-flex gap-2 mb-1">
+            <div class="d-flex gap-2 mb-1" data-aos="fade-right" data-aos-delay="700">
                 <div class="border-start border-pr"></div><li class="fs-8">Ideal for bulk consignments, time-sensitive cargo</li>
             </div>
-            <div class="d-flex gap-2 mb-1">
+            <div class="d-flex gap-2 mb-1" data-aos="fade-right" data-aos-delay="800">
                 <div class="border-start border-pr"></div><li class="fs-8">Manufacturer to distributor, warehouse to warehouse</li>
             </div>
-            <div class="d-flex gap-2 mb-1">
+            <div class="d-flex gap-2 mb-1" data-aos="fade-right" data-aos-delay="900">
                 <div class="border-start border-pr"></div><li class="fs-8">Covering Bangalore - Pan India expansion coming soon</li>
             </div>
           </ul>
@@ -209,27 +206,27 @@
       </div>
 
       <!-- PTL -->
-      <div class="col-md-4">
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
         <div class="service-card h-100 border-0 shadow-sm p-4">
-            <div class="w-fit bg-pr p-2 rounded mb-1" >
+            <div class="w-fit bg-pr p-2 rounded mb-1" data-aos="fade-right" data-aos-delay="200">
                 <img src="https://cdn-icons-png.flaticon.com/512/10112/10112526.png" style="width: 40px; " alt="">
             </div>
-          <p class="p-0 m-0 fw-bold ">Part Truckload (PTL)</p>
-          <p class="fs-8 text-pr fst-italic ">Pay only for the space you use. Move more, spend less.</p>
+          <p class="p-0 m-0 fw-bold " data-aos="fade-right" data-aos-delay="300">Part Truckload (PTL)</p>
+          <p class="fs-8 text-pr fst-italic " data-aos="fade-right" data-aos-delay="400">Pay only for the space you use. Move more, spend less.</p>
           <ul style="list-style: none;" class="fs-8 p-0 ">
-           <div class="d-flex gap-2 mb-1">
+           <div class="d-flex gap-2 mb-1" data-aos="fade-right" data-aos-delay="500">
                 <div class="border-start border-pr"></div><li class="fs-8">Cost-effective freight for mid-sized loads</li>
             </div>
-            <div class="d-flex gap-2 mb-1">
+            <div class="d-flex gap-2 mb-1" data-aos="fade-right" data-aos-delay="600">
                 <div class="border-start border-pr"></div><li class="fs-8">Consolidated shipments with secure handling</li>
             </div>
-            <div class="d-flex gap-2 mb-1">
+            <div class="d-flex gap-2 mb-1" data-aos="fade-right" data-aos-delay="700">
                 <div class="border-start border-pr"></div><li class="fs-8">Ideal for SMEs shipping regularly without full loads</li>
             </div>
-            <div class="d-flex gap-2 mb-1">
+            <div class="d-flex gap-2 mb-1" data-aos="fade-right" data-aos-delay="800">
                 <div class="border-start border-pr"></div><li class="fs-8">Structured routes with predictable timelines</li>
             </div>
-            <div class="d-flex gap-2 mb-1">
+            <div class="d-flex gap-2 mb-1" data-aos="fade-right" data-aos-delay="900">
                 <div class="border-start border-pr"></div><li class="fs-8">Real-time updates so you always know where things stand</li>
             </div>
           </ul>
@@ -237,27 +234,27 @@
       </div>
 
       <!-- Last Mile -->
-      <div class="col-md-4">
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
         <div class="service-card h-100 border-0 shadow-sm p-4">
-            <div class="w-fit bg-pr p-2 rounded mb-1" >
+            <div class="w-fit bg-pr p-2 rounded mb-1" data-aos="fade-right" data-aos-delay="200">
                 <img src="https://cdn-icons-png.freepik.com/512/8441/8441282.png" style="width: 40px; " alt="">
             </div>
-          <p class="p-0 m-0 fw-bold ">Last-Mile Delivery</p>
-          <p class="fs-8 fst-italic text-pr">Gets it there. Every time.</p>
+          <p class="p-0 m-0 fw-bold " data-aos="fade-right" data-aos-delay="300">Last-Mile Delivery</p>
+          <p class="fs-8 fst-italic text-pr" data-aos="fade-right" data-aos-delay="400">Gets it there. Every time.</p>
           <ul style="list-style: none;" class="fs-8 p-0 ">
-            <div class="d-flex gap-2 mb-1">
+            <div class="d-flex gap-2 mb-1" data-aos="fade-right" data-aos-delay="500">
                 <div class="border-start border-pr"></div><li class="fs-8">End-customer delivery across Bangalore</li>
             </div>
-            <div class="d-flex gap-2 mb-1">
+            <div class="d-flex gap-2 mb-1" data-aos="fade-right" data-aos-delay="600">
                 <div class="border-start border-pr"></div><li class="fs-8">Designed for e-commerce brands and D2C businesses</li>
             </div>
-            <div class="d-flex gap-2 mb-1">
+            <div class="d-flex gap-2 mb-1" data-aos="fade-right" data-aos-delay="700">
                 <div class="border-start border-pr"></div><li class="fs-8">Timely, tracked, and handled with care</li>
             </div>
-            <div class="d-flex gap-2 mb-1">
+            <div class="d-flex gap-2 mb-1" data-aos="fade-right" data-aos-delay="800">
                 <div class="border-start border-pr"></div><li class="fs-8">Supports high-volume delivery operations</li>
             </div>
-            <div class="d-flex gap-2 mb-1">
+            <div class="d-flex gap-2 mb-1" data-aos="fade-right" data-aos-delay="900">
                 <div class="border-start border-pr"></div><li class="fs-8">Built for businesses that need consistency, not chaos</li>
             </div>
           </ul>
@@ -269,16 +266,16 @@
 </section>
 
 <!-- Founder Qoute -->
- <section class="founder py-5 bg-dark text-white text-center">
+ <section class="founder py-5 bg-dark text-white text-center" data-aos="zoom-in">
   <div class="container">
 
-    <h3 class="fw-bold mb-4">A Logistics Brand Built on a Simple Idea</h3>
+    <h3 class="fw-bold mb-4" data-aos="zoom-in" data-aos-delay="100">A Logistics Brand Built on a Simple Idea</h3>
 
-    <p class="lead fs-7">
+    <p class="lead fs-7" data-aos="zoom-in" data-aos-delay="200">
       “Delvigo exists to fix what logistics gets wrong — reliability, communication, and accountability.”
     </p>
 
-    <h6 class="mt-3 text-pr fs-7">- Nithin Jadhav, Founder</h6>
+    <h6 class="mt-3 text-pr fs-7" data-aos="zoom-in" data-aos-delay="300">- Nithin Jadhav, Founder</h6>
 
   </div>
 </section>
@@ -287,7 +284,7 @@
  <section class="why-delvigo py-5">
   <div class="container">
 
-    <div class="text-center mb-5">
+    <div class="text-center mb-5" data-aos="fade-up">
       <h2 class="fw-bold">Why Businesses Choose Delvigo</h2>
       <p class="text-muted">Built for reliability. Designed for B2B logistics.</p>
     </div>
@@ -295,63 +292,63 @@
     <div class="row g-4">
 
       <!-- Card -->
-      <div class="col-md-4">
-        <div class="why-card p-4 h-100">
-          <div class="icon-box mb-3">
+      <div class="col-md-4" >
+        <div class="why-card p-4 h-100" data-aos="fade-up" data-aos-delay="100">
+          <div class="icon-box mb-3" data-aos="zoom-in" data-aos-delay="100">
             <i class="bi bi-chat-dots"></i>
           </div>
-          <p class="p-0 m-0 fw-bold">Proactive Communication</p>
-          <p class="mb-0 fs-8">You will know the status of your shipment without having to ask. We update you, not the other way around.</p>
+          <p class="p-0 m-0 fw-bold" data-aos="fade-up" data-aos-delay="200">Proactive Communication</p>
+          <p class="mb-0 fs-8" data-aos="fade-up" data-aos-delay="300">You will know the status of your shipment without having to ask. We update you, not the other way around.</p>
         </div>
       </div>
 
       <div class="col-md-4">
-        <div class="why-card p-4 h-100">
-          <div class="icon-box mb-3">
+        <div class="why-card p-4 h-100" data-aos="fade-up" data-aos-delay="100">
+          <div class="icon-box mb-3" data-aos="zoom-in" data-aos-delay="100">
             <i class="bi bi-shield-check"></i>
           </div>
-          <p class="p-0 m-0 fw-bold">No Excuses Policy</p>
-          <p class="mb-0 fs-8">When something does not go as planned, we own it. Clients should never be left guessing or chasing.</p>
+          <p class="p-0 m-0 fw-bold" data-aos="fade-up" data-aos-delay="200">No Excuses Policy</p>
+          <p class="mb-0 fs-8" data-aos="fade-up" data-aos-delay="300">When something does not go as planned, we own it. Clients should never be left guessing or chasing.</p>
         </div>
       </div>
 
       <div class="col-md-4">
-        <div class="why-card p-4 h-100">
-          <div class="icon-box mb-3">
+        <div class="why-card p-4 h-100" data-aos="fade-up" data-aos-delay="100">
+          <div class="icon-box mb-3" data-aos="zoom-in" data-aos-delay="100">
             <i class="bi bi-briefcase"></i>
           </div>
-          <p class="p-0 m-0 fw-bold">B2B Focused</p>
-          <p class="mb-0 fs-8">We built our processes around manufacturers and businesses. Not mass-market, not generic - structured for B2B.</p>
+          <p class="p-0 m-0 fw-bold" data-aos="fade-up" data-aos-delay="200">B2B Focused</p>
+          <p class="mb-0 fs-8" data-aos="fade-up" data-aos-delay="300">We built our processes around manufacturers and businesses. Not mass-market, not generic - structured for B2B.</p>
         </div>
       </div>
 
       <div class="col-md-4">
-        <div class="why-card p-4 h-100">
-          <div class="icon-box mb-3">
+        <div class="why-card p-4 h-100" data-aos="fade-up" data-aos-delay="100">
+          <div class="icon-box mb-3" data-aos="zoom-in" data-aos-delay="100">
             <i class="bi bi-people"></i>
           </div>
-          <p class="p-0 m-0 fw-bold">Founders Who Know Logistics</p>
-          <p class="mb-0 fs-8">This company was built by people who grew up in the industry. We know the problems because we lived them.</p>
+          <p class="p-0 m-0 fw-bold" data-aos="fade-up" data-aos-delay="200">Founders Who Know Logistics</p>
+          <p class="mb-0 fs-8" data-aos="fade-up" data-aos-delay="300">This company was built by people who grew up in the industry. We know the problems because we lived them.</p>
         </div>
       </div>
 
       <div class="col-md-4">
-        <div class="why-card p-4 h-100">
-          <div class="icon-box mb-3">
+        <div class="why-card p-4 h-100" data-aos="fade-up" data-aos-delay="100">
+          <div class="icon-box mb-3" data-aos="zoom-in" data-aos-delay="100">
             <i class="bi bi-clock-history"></i>
           </div>
-          <p class="p-0 m-0 fw-bold">Reliability First</p>
-          <p class="mb-0 fs-8">Speed matters. Cost matters. But none of it works if your shipment is late, misplaced, or unexplained.</p>
+          <p class="p-0 m-0 fw-bold" data-aos="fade-up" data-aos-delay="200">Reliability First</p>
+          <p class="mb-0 fs-8" data-aos="fade-up" data-aos-delay="300">Speed matters. Cost matters. But none of it works if your shipment is late, misplaced, or unexplained.</p>
         </div>
       </div>
 
       <div class="col-md-4">
-        <div class="why-card p-4 h-100">
-          <div class="icon-box mb-3">
+        <div class="why-card p-4 h-100" data-aos="fade-up" data-aos-delay="100">
+          <div class="icon-box mb-3" data-aos="zoom-in" data-aos-delay="100">
             <i class="bi bi-graph-up"></i>
           </div>
-          <p class="p-0 m-0 fw-bold">Growing With You</p>
-          <p class="mb-0 fs-8">Starting in Bangalore with plans to scale Pan India. We want to grow alongside the businesses we serve.</p>
+          <p class="p-0 m-0 fw-bold" data-aos="fade-up" data-aos-delay="200">Growing With You</p>
+          <p class="mb-0 fs-8" data-aos="fade-up" data-aos-delay="300">Starting in Bangalore with plans to scale Pan India. We want to grow alongside the businesses we serve.</p>
         </div>
       </div>
 
@@ -364,44 +361,44 @@
   <div class="container">
 
     <div class="text-center mb-5">
-      <h2 class="fw-bold text-white">Who We Work With</h2>
-      <p class="text-light">Industries we power with reliable logistics</p>
+      <h2 class="fw-bold" data-aos="fade-up" data-aos-delay="100">Who We Work With</h2>
+      <p class="" data-aos="fade-up" data-aos-delay="200">Industries we power with reliable logistics</p>
     </div>
 
     <div class="row g-4">
 
       <!-- Card -->
       <div class="col-md-4">
-        <div class="industry-card">
+        <div class="industry-card" data-aos="fade-up" data-aos-delay="300">
           <img src="https://images.unsplash.com/photo-1716643863806-989dd76ae093?q=80&w=774&auto=format&fit=crop" alt="Manufacturers">
 
-          <div class="industry-content">
-            <h5>Manufacturers</h5>
-            <p>Raw material and finished goods movement, factory to factory or to distribution hubs.</p>
+          <div class="industry-content" data-aos="zoom-in" data-aos-delay="400">
+            <h5 class="fw-bold fs-5" data-aos="fade-up" data-aos-delay="500">Manufacturers</h5>
+            <p class="fs-6" data-aos="fade-up" data-aos-delay="600">Raw material and finished goods movement, factory to factory or to distribution hubs.</p>
           </div>
         </div>
       </div>
 
       <!-- Card -->
       <div class="col-md-4">
-        <div class="industry-card">
+        <div class="industry-card" data-aos="fade-up" data-aos-delay="300">
           <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d" alt="SMEs">
 
-          <div class="industry-content">
-            <h5>SMEs</h5>
-            <p>Reliable freight without enterprise pricing or complicated contracts.</p>
+          <div class="industry-content" data-aos="zoom-in" data-aos-delay="400">
+            <h5 class="fw-bold fs-5"  data-aos="fade-up" data-aos-delay="500">SMEs</h5>
+            <p class="fs-6" data-aos="fade-up" data-aos-delay="600">Reliable freight without enterprise pricing or complicated contracts.</p>
           </div>
         </div>
       </div>
 
       <!-- Card -->
       <div class="col-md-4">
-        <div class="industry-card">
+        <div class="industry-card" data-aos="fade-up" data-aos-delay="300">
           <img src="https://images.unsplash.com/photo-1607082349566-187342175e2f" alt="E-commerce">
 
-          <div class="industry-content">
-            <h5>E-commerce</h5>
-            <p>Last-mile delivery that reflects well on your brand, not just ours.</p>
+          <div class="industry-content" data-aos="zoom-in" data-aos-delay="400">
+            <h5 class="fw-bold fs-5" data-aos="fade-up" data-aos-delay="500">E-commerce</h5>
+            <p class="fs-6" data-aos="fade-up" data-aos-delay="600">Last-mile delivery that reflects well on your brand, not just ours.</p>
           </div>
         </div>
       </div>
@@ -419,15 +416,16 @@
 
       <!-- LEFT CONTENT -->
       <div class="col-lg-6 text-center text-lg-start mb-4 mb-lg-0">
-        <h2 class="fw-bold mb-3">Ready to Ship? Let's Talk.</h2>
+        <h2 class="fw-bold mb-3" data-aos="fade-right" data-aos-delay="100">Ready to Ship? Let's Talk.</h2>
 
-        <p class="mb-4">
+        <p class="mb-4" data-aos="fade-right" data-aos-delay="200">
           Tell us what you need. We will get back within 24 hours with a clear plan.
         </p>
 
         <div class="quick-contact">
-          <a href="tel:+918884288079" class="call-btn blue-btn"><i class="bi bi-telephone"></i> Call Now</a>
-          <a href="https://wa.me/918884288079?text=Hi,%20I%20have%20a%20freight%20enquiry%20for%20Delvigo." target="_blank" class="whatsapp-btn">
+          <a href="tel:+918884288079" class="call-btn blue-btn" data-aos="zoom-in" data-aos-delay="300"><i class="bi bi-telephone"></i> Call Now</a>
+          <a href="https://wa.me/918884288079?text=Hi,%20I%20have%20a%20freight%20enquiry%20for%20Delvigo." target="_blank"  class="whatsapp-btn"
+          data-aos="zoom-in" data-aos-delay="400">
             <i class="bi bi-whatsapp"></i> Chat on WhatsApp
           </a>
         </div>
@@ -435,9 +433,9 @@
 
       <!-- RIGHT FORM -->
       <div class="col-lg-6">
-        <div class="contact-right p-4 rounded-4  shadow">
+        <div class="contact-right p-4 rounded-4  shadow" data-aos="fade-left" data-aos-delay="100">
 
-          <h6 class="fw-bold mb-3 text-center">Get a Callback</h6>
+          <h6 class="fw-bold mb-3 text-center" >Get a Callback</h6>
 
           <form class="lead-form">
 
@@ -504,8 +502,8 @@
 
     <!-- Heading -->
     <div class="text-center mb-5">
-      <h2 class="fw-bold">Frequently Asked Questions</h2>
-      <p class="text-muted">Everything you need to know about Delvigo logistics services</p>
+      <h2 class="fw-bold" data-aos="fade-up" data-aos-delay="100">Frequently Asked Questions</h2>
+      <p class="text-muted" data-aos="fade-up" data-aos-delay="200">Everything you need to know about Delvigo logistics services</p>
     </div>
 
     <div class="row" >
@@ -513,7 +511,7 @@
         <div class="accordion" id="faqAccordion">
 
       <!-- Q1 -->
-      <div class="accordion-item mb-3 border-0 shadow-sm rounded-3">
+      <div class="accordion-item mb-3 border-0 shadow-sm rounded-3" data-aos="zoom-in" data-aos-delay="100">
         <h2 class="accordion-header">
           <button class="accordion-button fw-semibold" data-bs-toggle="collapse" data-bs-target="#faq1">
             What is Full Truckload (FTL) freight?
@@ -527,7 +525,7 @@
       </div>
 
       <!-- Q2 -->
-      <div class="accordion-item mb-3 border-0 shadow-sm rounded-3">
+      <div class="accordion-item mb-3 border-0 shadow-sm rounded-3" data-aos="zoom-in" data-aos-delay="200">
         <h2 class="accordion-header">
           <button class="accordion-button collapsed fw-semibold" data-bs-toggle="collapse" data-bs-target="#faq2">
             What is the difference between FTL and PTL?
@@ -541,7 +539,7 @@
       </div>
 
       <!-- Q3 -->
-      <div class="accordion-item mb-3 border-0 shadow-sm rounded-3">
+      <div class="accordion-item mb-3 border-0 shadow-sm rounded-3" data-aos="zoom-in" data-aos-delay="300">
         <h2 class="accordion-header">
           <button class="accordion-button collapsed fw-semibold" data-bs-toggle="collapse" data-bs-target="#faq3">
             Does Delvigo serve only Bangalore?
@@ -555,7 +553,7 @@
       </div>
 
       <!-- Q4 -->
-      <div class="accordion-item mb-3 border-0 shadow-sm rounded-3">
+      <div class="accordion-item mb-3 border-0 shadow-sm rounded-3" data-aos="zoom-in" data-aos-delay="400">
         <h2 class="accordion-header">
           <button class="accordion-button collapsed fw-semibold" data-bs-toggle="collapse" data-bs-target="#faq4">
             What types of businesses does Delvigo work with?
@@ -569,7 +567,7 @@
       </div>
 
       <!-- Q5 -->
-      <div class="accordion-item mb-3 border-0 shadow-sm rounded-3">
+      <div class="accordion-item mb-3 border-0 shadow-sm rounded-3" data-aos="zoom-in" data-aos-delay="500">
         <h2 class="accordion-header">
           <button class="accordion-button collapsed fw-semibold" data-bs-toggle="collapse" data-bs-target="#faq5">
             How do I get a freight quote from Delvigo?
@@ -583,7 +581,7 @@
       </div>
 
       <!-- Q6 -->
-      <div class="accordion-item mb-3 border-0 shadow-sm rounded-3">
+      <div class="accordion-item mb-3 border-0 shadow-sm rounded-3" data-aos="zoom-in" data-aos-delay="600">
         <h2 class="accordion-header">
           <button class="accordion-button collapsed fw-semibold" data-bs-toggle="collapse" data-bs-target="#faq6">
             Does Delvigo provide proof of delivery?
@@ -597,7 +595,7 @@
       </div>
 
       <!-- Q7 -->
-      <div class="accordion-item mb-3 border-0 shadow-sm rounded-3">
+      <div class="accordion-item mb-3 border-0 shadow-sm rounded-3" data-aos="zoom-in" data-aos-delay="700">
         <h2 class="accordion-header">
           <button class="accordion-button collapsed fw-semibold" data-bs-toggle="collapse" data-bs-target="#faq7">
             How does Delvigo track shipments?
@@ -611,7 +609,7 @@
       </div>
 
       <!-- Q8 -->
-      <div class="accordion-item mb-3 border-0 shadow-sm rounded-3">
+      <div class="accordion-item mb-3 border-0 shadow-sm rounded-3" data-aos="zoom-in" data-aos-delay="800">
         <h2 class="accordion-header">
           <button class="accordion-button collapsed fw-semibold" data-bs-toggle="collapse" data-bs-target="#faq8">
             Does Delvigo handle last-mile delivery for e-commerce?
@@ -625,7 +623,7 @@
       </div>
 
       <!-- Q9 -->
-      <div class="accordion-item mb-3 border-0 shadow-sm rounded-3">
+      <div class="accordion-item mb-3 border-0 shadow-sm rounded-3" data-aos="zoom-in" data-aos-delay="900">
         <h2 class="accordion-header">
           <button class="accordion-button collapsed fw-semibold" data-bs-toggle="collapse" data-bs-target="#faq9">
             Is there a minimum shipment size for PTL?
@@ -639,7 +637,7 @@
       </div>
 
       <!-- Q10 -->
-      <div class="accordion-item mb-3 border-0 shadow-sm rounded-3">
+      <div class="accordion-item mb-3 border-0 shadow-sm rounded-3" data-aos="zoom-in" data-aos-delay="1000">
         <h2 class="accordion-header">
           <button class="accordion-button collapsed fw-semibold" data-bs-toggle="collapse" data-bs-target="#faq10">
             What makes Delvigo different?
@@ -653,7 +651,7 @@
       </div>
 
       <!-- Q11 -->
-      <div class="accordion-item mb-3 border-0 shadow-sm rounded-3">
+      <div class="accordion-item mb-3 border-0 shadow-sm rounded-3" data-aos="zoom-in" data-aos-delay="1100">
         <h2 class="accordion-header">
           <button class="accordion-button collapsed fw-semibold" data-bs-toggle="collapse" data-bs-target="#faq11">
             Does Delvigo offer warehousing?
@@ -667,7 +665,7 @@
       </div>
 
       <!-- Q12 -->
-      <div class="accordion-item mb-3 border-0 shadow-sm rounded-3">
+      <div class="accordion-item mb-3 border-0 shadow-sm rounded-3" data-aos="zoom-in" data-aos-delay="1200">
         <h2 class="accordion-header">
           <button class="accordion-button collapsed fw-semibold" data-bs-toggle="collapse" data-bs-target="#faq12">
             Can I set up a regular freight contract?
@@ -690,16 +688,16 @@
  <section class="final-cta py-5 text-white">
   <div class="row container">
     <div class="col-lg-3 mb-3">
-      <h4 class="p0 m-0 fw-bold text-white mb-2">Delvigo</h4>
-      <p class="p-0 m-0 fs-8 text-white mb-2">Delvigo handles Full Truckload, Part Truckload, and Last-Mile Delivery for manufacturers, SMEs, and e-commerce brands in Bangalore.</p>
+      <h4 class="p0 m-0 fw-bold text-white mb-2" data-aos="zoom-in" data-aos-delay="100">Delvigo</h4>
+      <p class="p-0 m-0 fs-8 text-white mb-2" data-aos="zoom-in" data-aos-delay="200">Delvigo handles Full Truckload, Part Truckload, and Last-Mile Delivery for manufacturers, SMEs, and e-commerce brands in Bangalore.</p>
       <div class="d-flex align-items-center gap-2">
-        <div class="icon-footer">
+        <div class="icon-footer" data-aos="zoom-in" data-aos-delay="300">
           <i class="bi bi-instagram"></i>
         </div>
-        <div class="icon-footer">
+        <div class="icon-footer" data-aos="zoom-in" data-aos-delay="400">
           <i class="bi bi-facebook"></i>
         </div>
-        <div class="icon-footer">
+        <div class="icon-footer" data-aos="zoom-in" data-aos-delay="500">
           <i class="bi bi-twitter"></i>
         </div>
       </div>
@@ -708,74 +706,62 @@
 <!-- Services -->
     <div class="col-lg-2 mb-3 text-white">
 
-  <h6 class="fw-bold mb-3 text-uppercase">Services</h6>
+  <h6 class="fw-bold mb-3 text-uppercase" data-aos="zoom-in" data-aos-delay="100">Services</h6>
 
   <ul class="list-unstyled">
 
-    <li class="mb-2">
+    <li class="mb-2" data-aos="zoom-in" data-aos-delay="200">
       <a href="/services.html#FTL" class="footer-link">
         <i class="bi bi-truck me-2"></i> Full Truckload (FTL)
       </a>
     </li>
 
-    <li class="mb-2">
+    <li class="mb-2" data-aos="zoom-in" data-aos-delay="300">
       <a href="/services.html#PTL" class="footer-link">
         <i class="bi bi-box-seam me-2"></i> Part Truckload (PTL)
       </a>
     </li>
 
-    <li class="mb-2">
+    <li class="mb-2" data-aos="zoom-in" data-aos-delay="400">
       <a href="/services.html#LM" class="footer-link">
         <i class="bi bi-geo-alt me-2"></i> Last-Mile Delivery
       </a>
     </li>
-
-    <!-- <li class="mb-2">
-      <a href="#" class="footer-link">
-        <i class="bi bi-clock-history me-2"></i> Express Delivery
-      </a>
-    </li> -->
-
-    <!-- <li>
-      <a href="#" class="footer-link">
-        <i class="bi bi-building me-2"></i> Contract Logistics
-      </a>
-    </li> -->
 
   </ul>
 
 </div>
 <!-- Company -->
     <div class="col-lg-2 ps-lg-5">
-      <h6 class="p0 m-0 fw-bold text-white mb-2 text-uppercase">Company</h6>
+      <h6 class="p0 m-0 fw-bold text-white mb-2 text-uppercase" data-aos="zoom-in" data-aos-delay="100">Company</h6>
 
       <ul class="list-unstyled">
 
-    <li class="mb-2">
+    <li class="mb-2" data-aos="zoom-in" data-aos-delay="200">
       <a href="/index.html" class="footer-link">
       Home
       </a>
     </li>
 
-    <li class="mb-2">
+    <li class="mb-2" data-aos="zoom-in" data-aos-delay="300">
       <a href="/about.html" class="footer-link">
         About
       </a>
     </li>
 
-    <li class="mb-2">
+    <li class="mb-2" data-aos="zoom-in" data-aos-delay="400">
       <a href="/services.html" class="footer-link">
         Services
       </a>
     </li>
 
-    <li class="mb-2">
+    <li class="mb-2" data-aos="zoom-in" data-aos-delay="500">
       <a href="/industries.html" class="footer-link">
         Industries
       </a>
     </li>
 
-    <li>
+    <li class="mb-2" data-aos="zoom-in" data-aos-delay="600">
       <a href="/contact.html" class="footer-link">
         Contact Us
       </a>
@@ -787,12 +773,12 @@
     <!-- Get in touch -->
     <div class="col-lg-5 mb-3 text-white">
 
-  <h6 class="fw-bold mb-3 text-uppercase">Get in Touch</h6>
+  <h6 class="fw-bold mb-3 text-uppercase" data-aos="zoom-in" data-aos-delay="100">Get in Touch</h6>
 
   <div class="d-flex align-items-top gap-5">
   <div>
     <!-- Address -->
-  <div class="d-flex align-items-start gap-3 mb-3">
+  <div class="d-flex align-items-start gap-3 mb-3" data-aos="zoom-in" data-aos-delay="200">
     <i class="bi bi-geo-alt fs-5 mt-1"></i>
     <div>
       <p class="fw-semibold mb-1">Office Address</p>
@@ -807,7 +793,7 @@
 
   <div>
     <!-- Business Hours -->
-  <div class="d-flex align-items-start gap-3 mb-3">
+  <div class="d-flex align-items-start gap-3 mb-3" data-aos="zoom-in" data-aos-delay="300">
     <i class="bi bi-clock fs-5 mt-1"></i>
     <div>
       <p class="fw-semibold mb-1">Business Hours</p>
@@ -821,7 +807,7 @@
   </div>
 </div>
   <!-- Contact -->
-  <div class="d-flex align-items-start gap-3 mb-2">
+  <div class="d-flex align-items-start gap-3 mb-2" data-aos="zoom-in" data-aos-delay="400">
     <i class="bi bi-telephone fs-5 mt-1"></i>
     <div>
       <p class="fw-semibold mb-2">Contact</p>
@@ -854,7 +840,7 @@
   </div>
 
   <!-- Bottom Bar -->
-    <div class="footer-bottom text-center mt-5 pt-4">
+    <div class="footer-bottom text-center mt-5 pt-4" >
       <p class="small mb-0">
         © 2026 Delvigo Logistics. All rights reserved.
       </p>
@@ -863,6 +849,18 @@
 
 <!-- Bootstrap JS (MATCH VERSION) -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+  <!-- AOS -->
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+ AOS.init({
+    duration: 1000,     // animation duration
+    once: true,         // animation happens only once
+    offset: 100,        // trigger offset
+    easing: 'ease-in-out'
+  });
+</script>
 
 </body>
 </html>
