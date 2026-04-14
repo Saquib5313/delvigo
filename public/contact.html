@@ -146,46 +146,47 @@
       <!-- RIGHT SIDE (FORM) -->
       <div class="contact-right">
 
-        <form class="lead-form">
+        <form class="lead-form" action="https://formeasy-tt5oyjktnq-uc.a.run.app/submit"method="POST">
+          <input type="hidden" name="access_key" value="29c8238b-bfba-431f-9f71-9052714b97e3">
 
           <div class="form-group">
-            <input type="text" placeholder="Full Name" required>
+            <input type="text" name="name" placeholder="Full Name" required>
           </div>
 
           <div class="form-group">
-            <input type="tel" placeholder="Phone Number" required>
+            <input type="tel" name="mobileNo" placeholder="Phone Number" required>
           </div>
 
           <div class="form-group">
-            <input type="text" placeholder="Pickup City" required>
+            <input type="text" name="pickupcity" placeholder="Pickup City" required>
           </div>
 
           <div class="form-group">
-            <input type="text" placeholder="Delivery City" required>
+            <input type="text" name="deliverycity" placeholder="Delivery City" required>
           </div>
 
           <div class="form-group">
   <label>Service Type</label>
   <div class="radio-group">
     <label class="radio-card">
-      <input type="radio" name="service">
+      <input type="radio" value="FTL" name="FTL">
       <span>FTL</span>
     </label>
 
     <label class="radio-card">
-      <input type="radio" name="service">
-      <span>LTL</span>
+      <input type="radio" value="PTL" name="PTL">
+      <span>PTL</span>
     </label>
 
     <label class="radio-card">
-      <input type="radio" name="service">
-      <span>Express</span>
+      <input type="radio" value="LM" name="LM">
+      <span>LM</span>
     </label>
   </div>
 </div>
 
           <div class="form-group">
-            <textarea placeholder="Brief about your shipment (optional)"></textarea>
+            <textarea name="message" placeholder="Brief about your shipment (optional)"></textarea>
           </div>
 
           <button type="submit" class="submit-btn">
@@ -378,6 +379,17 @@
 
 <!-- Bootstrap JS (MATCH VERSION) -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+  <!-- AOS -->
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+ AOS.init({
+    duration: 1000,     // animation duration
+    once: true,         // animation happens only once
+    offset: 100,        // trigger offset
+    easing: 'ease-in-out'
+  });
+</script>
 
 </body>
 </html>
