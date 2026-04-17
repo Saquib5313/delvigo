@@ -195,11 +195,12 @@ body {
   background: linear-gradient(135deg, #0a0f1c, #111827);
 }
 
-.hero-img{
-    max-width: 350px;
-    object-fit: cover;
+.hero-img {
+  width: 100%;
+  max-width: 350px !important;
+  height: auto;
+  object-fit: cover;
 }
-
 
 .service-card {
   background: #fff;
