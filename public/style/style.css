@@ -196,7 +196,7 @@ body {
 }
 
 .hero-img{
-    /* max-width: 300px; */
+    max-width: 350px;
     object-fit: cover;
 }
 
