@@ -1,12 +1,3 @@
-AOS.init();
-
-const c1 = new CountUp('count1', 500);
-const c2 = new CountUp('count2', 120);
-const c3 = new CountUp('count3', 25);
-
-c1.start();
-c2.start();
-c3.start();
 
 
 
@@ -34,5 +25,5 @@ window.addEventListener("load", () => {
   setTimeout(() => {
     loader.style.display = "none";
     content.style.display = "block";
-  }, 8000); // if video fails
+  }, 5000); // if video fails
 });
