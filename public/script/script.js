@@ -25,5 +25,13 @@ window.addEventListener("load", () => {
   setTimeout(() => {
     loader.style.display = "none";
     content.style.display = "block";
+    AOS.init({
+    duration: 1000,     // animation duration
+    once: true,         // animation happens only once
+    offset: 100,        // trigger offset
+    easing: 'ease-in-out'
+  });
   }, 5000); // if video fails
 });
+
+
