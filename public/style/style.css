@@ -28,6 +28,31 @@ body {
         font-family: "Red Hat Display", sans-serif;
     }
 
+
+
+    /* VIDEO FULL SCREEN */
+#video-loader{
+  position:fixed;
+  inset:0;
+  background:#fff;
+  z-index:99999;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+/* VIDEO FIT */
+#video-loader video{
+  max-width:50%;
+  /* max-height:50%; */
+  object-fit:cover;
+}
+
+/* HIDE WEBSITE INITIALLY */
+#main-content{
+  display:none;
+}
+
    /* Top header */
 .top-header {
   background: linear-gradient(135deg, #0a0f1c, #111827);
@@ -170,6 +195,10 @@ body {
   font-size: 1rem;
 }
 
+.fs-9{
+  font-size: 0.5rem;
+}
+
 @media (max-width: 768px) {
   .fs-8 {
     font-size: 1.2rem;
@@ -195,12 +224,81 @@ body {
   background: linear-gradient(135deg, #0a0f1c, #111827);
 }
 
-.hero-img {
+/* .hero-img {
   width: 100%;
-  max-width: 350px !important;
+  max-width: 270px !important;
   height: auto;
   object-fit: cover;
+} */
+
+/* .hero-img {
+  width: 100%;
+  max-width: 320px !important;
+  border-radius: 20px;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.6);
+  animation: floatImage 4s ease-in-out infinite;
+} */
+
+
+
+.hero-img-stack {
+  position: relative;
+  display: inline-block;
 }
+
+
+/* MAIN IMAGE */
+.hero-img.main-img {
+  max-width: 300px;
+  border-radius: 20px;
+  position: relative;
+  z-index: 3;
+  transform: rotate(-2deg);
+  transition: 0.4s ease;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.6);
+}
+
+
+/* BACK LAYER 1 */
+.hero-img-stack::before {
+  content: "";
+  position: absolute;
+  width: 70%;
+  height: 100%;
+  background: linear-gradient(135deg, #ff6a00, #ff8c00);
+  border-radius: 20px;
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-6deg);
+
+  z-index: 1;
+  opacity: 0.6;
+}
+
+/* BACK LAYER 2 */
+.hero-img-stack::after {
+  content: "";
+  position: absolute;
+  width: 70%;
+  height: 100%;
+  background: #3b82f6;
+  border-radius: 20px;
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(4deg);
+
+  z-index: 2;
+  opacity: 0.5;
+}
+
+/* HOVER EFFECT */
+.hero-img-stack:hover .main-img {
+  transform: rotate(0deg) scale(1.05);
+}
+
+
 
 .service-card {
   background: #fff;
