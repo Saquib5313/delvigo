@@ -43,7 +43,7 @@ body {
 
 /* VIDEO FIT */
 #video-loader video{
-  max-width:50%;
+  max-width:100%;
   /* max-height:50%; */
   object-fit:cover;
 }
@@ -58,6 +58,11 @@ body {
   background: linear-gradient(135deg, #0a0f1c, #111827);
 }
 
+@media (max-width: 576px) {
+  .contact-info p {
+    font-size: 14px;
+  }
+}
 
 /* Sticky navbar */
 .main-navbar {
@@ -72,10 +77,16 @@ body {
   transition: 0.3s;
 }
 
-/* .lead {
-    font-size: 1.5rem;
-    font-weight: 300;
-} */
+.hero-desc {
+  font-size: 16px;
+}
+
+@media (max-width: 576px) {
+  .hero-desc {
+    font-size: 13px;
+    line-height: 1.5;
+  }
+}
 
 /* Mobile fix */
 @media (max-width: 768px) {
@@ -296,6 +307,32 @@ body {
 /* HOVER EFFECT */
 .hero-img-stack:hover .main-img {
   transform: rotate(0deg) scale(1.05);
+}
+
+
+/* About page */
+.hero img {
+  object-fit: cover;
+  z-index: 0;
+  /* max-width: 100px; */
+}
+
+.team-card img {
+  object-fit: cover;
+  border: 3px solid rgba(255,255,255,0.2);
+}
+
+.content-banner {
+  min-height: 100vh;
+  background: linear-gradient(
+      rgba(5, 37, 91, 0.297),
+      rgba(7, 22, 47, 0.9)
+    ),
+    url('/img/hero\ 1.png') center/cover no-repeat;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 
@@ -684,6 +721,18 @@ body {
   color: #cfcfcf;
   line-height: 1.7;
 }
+
+.hero-title {
+  max-width: 650px; /* keeps it within 2 lines on desktop */
+}
+
+@media (max-width: 576px) {
+  .hero-title {
+    font-size: 22px; /* adjust to fit 2 lines */
+    line-height: 1.3;
+  }
+}
+
 
 /* right card */
 .promise-card {

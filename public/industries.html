@@ -31,22 +31,29 @@
 <body>
     
 
+
 <!-- Top Header (scrolls away) -->
 <div class="top-header py-2">
-  <div class="px-3 d-flex justify-content-end gap-3 align-items-center">
-    
-    <p class="p-0 m-0 text-white  "><i class="bi bi-telephone me-2"></i>+91 88844 49230 <span class="ps-3 border-end"></span></p>
-    <p class="p-0 m-0 text-white "><i class="bi bi-envelope-at me-2"></i>business@delvigo.co.in</p>
-  </div>
+  <div class="px-3 d-flex justify-content-end gap-3 align-items-center contact-info">
+  <p class="p-0 m-0 text-white">
+    <i class="bi bi-telephone me-2"></i>+91 88844 49230 
+    <span class="ps-3 border-end"></span>
+  </p>
+
+  <p class="p-0 m-0 text-white">
+    <i class="bi bi-envelope-at me-2"></i>business@delvigo.co.in
+  </p>
+</div>
 </div>
 
 <!-- Navbar (sticky) -->
-<div class="main-navbar sticky-top position-relative">
+<div class="main-navbar sticky-top ">
   <nav class="navbar navbar-expand-lg navbar-light bg-white px-3 px-lg-5 py-2 shadow-sm">
 
     <!-- Logo -->
     <a class="navbar-brand" href="/index.html">
-      <img src="img/logo tag.png.png" style="max-width: 110px;" alt="Logo">
+      <img src="img/logo tag.png" style="max-width: 110px;" alt="Logo">
+      
     </a>
 
     <!-- Toggle -->
@@ -89,10 +96,12 @@
   </nav>
 </div>
 <!-- Hero -->
-<section class="hero section text-center" data-aos="fade-up">
-  <div class="px-lg-5 px-2">
-    <h1 class="text-white fw-bold">Built for Businesses That Cannot Afford to Get Logistics Wrong</h1>
-    <p class="mt-3 text-white">
+<section class="hero text-center position-relative">
+  <img src="/img/Hero final.png" class="img-fluid w-100 position-absolute top-0 start-0 h-100 object-fit-cover opacity-25" alt="logistics" />
+
+  <div class="px-lg-5 px-2 position-relative">
+    <h1 class="text-white fw-bold" data-aos="fade-up">Built for Businesses That Cannot Afford to Get Logistics Wrong</h1>
+    <p class="mt-3 text-white" data-aos="fade-up" data-aos-delay="200">
       Delvigo works primarily with B2B clients - manufacturers, distributors, SMEs, and e-commerce businesses that need freight partners they can rely on without micromanaging.
     </p>
   </div>
@@ -220,49 +229,85 @@
 
     <div class="row g-4">
 
-      <div class="col-12 col-lg-4" data-aos="fade-up" data-aos-delay="100">
-        <div class="card-custom">
-          <h5 class="value-title">Communication Without Chasing</h5>
-          <p class="text-white">You get updates at key stages - automatically.</p>
-        </div>
+  <!-- 1 -->
+  <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+    <div class="card-custom text-center p-4 h-100">
+      <div class="icon-box mb-3">
+        <i class="bi bi-chat-dots"></i>
       </div>
-
-      <div class="col-12 col-lg-4" data-aos="fade-up" data-aos-delay="200">
-        <div class="card-custom">
-          <h5 class="value-title">One Point of Contact</h5>
-          <p class="text-white">No bouncing between departments or call centers.</p>
-        </div>
-      </div>
-
-      <div class="col-12 col-lg-4" data-aos="fade-up" data-aos-delay="300">
-        <div class="card-custom">
-          <h5 class="value-title">Founders in the Field</h5>
-          <p class="text-white">Hands-on leadership involved in operations.</p>
-        </div>
-      </div>
-
-      <div class="col-12 col-lg-4" data-aos="fade-up" data-aos-delay="400">
-        <div class="card-custom">
-          <h5 class="value-title">Accountability</h5>
-          <p class="text-white">We fix issues transparently when things go wrong.</p>
-        </div>
-      </div>
-
-      <div class="col-12 col-lg-4" data-aos="fade-up" data-aos-delay="500">
-        <div class="card-custom">
-          <h5 class="value-title">Industry Experience</h5>
-          <p class="text-white">Built from real logistics ground experience.</p>
-        </div>
-      </div>
-
-      <div class="col-12 col-lg-4" data-aos="fade-up" data-aos-delay="600">
-        <div class="card-custom">
-          <h5 class="value-title">No Vague Pricing</h5>
-          <p class="text-white">Clear quotes. No surprises.</p>
-        </div>
-      </div>
-
+      <p class="text-white mb-0">
+        <b class="text-pr d-block mb-1">Communication Without Chasing</b>
+        You get updates at key stages - automatically.
+      </p>
     </div>
+  </div>
+
+  <!-- 2 -->
+  <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+    <div class="card-custom text-center p-4 h-100">
+      <div class="icon-box mb-3">
+        <i class="bi bi-person-check"></i>
+      </div>
+      <p class="text-white mb-0">
+        <b class="text-pr d-block mb-1">One Point of Contact</b>
+        No bouncing between departments or call centers.
+      </p>
+    </div>
+  </div>
+
+  <!-- 3 -->
+  <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+    <div class="card-custom text-center p-4 h-100">
+      <div class="icon-box mb-3">
+        <i class="bi bi-people"></i>
+      </div>
+      <p class="text-white mb-0">
+        <b class="text-pr d-block mb-1">Founders in the Field</b>
+        Hands-on leadership involved in operations.
+      </p>
+    </div>
+  </div>
+
+  <!-- 4 -->
+  <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="400">
+    <div class="card-custom text-center p-4 h-100">
+      <div class="icon-box mb-3">
+        <i class="bi bi-shield-check"></i>
+      </div>
+      <p class="text-white mb-0">
+        <b class="text-pr d-block mb-1">Accountability</b>
+        We fix issues transparently when things go wrong.
+      </p>
+    </div>
+  </div>
+
+  <!-- 5 -->
+  <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="500">
+    <div class="card-custom text-center p-4 h-100">
+      <div class="icon-box mb-3">
+        <i class="bi bi-briefcase"></i>
+      </div>
+      <p class="text-white mb-0">
+        <b class="text-pr d-block mb-1">Industry Experience</b>
+        Built from real logistics ground experience.
+      </p>
+    </div>
+  </div>
+
+  <!-- 6 -->
+  <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="600">
+    <div class="card-custom text-center p-4 h-100">
+      <div class="icon-box mb-3">
+        <i class="bi bi-currency-rupee"></i>
+      </div>
+      <p class="text-white mb-0">
+        <b class="text-pr d-block mb-1">No Vague Pricing</b>
+        Clear quotes. No surprises.
+      </p>
+    </div>
+  </div>
+
+</div>
   </div>
 </section>
 
@@ -343,7 +388,7 @@
 
 
 <!-- Footer -->
-  <section class="final-cta p-5 text-white">
+  <section class="final-cta p-lg-5 p-2 text-white">
   <div class="row container">
     <div class="col-12  col-lg-3 mb-4">
       <h4 class="p-0 m-0 fw-bold text-white mb-2" data-aos="zoom-in" data-aos-delay="100">Delvigo</h4>
